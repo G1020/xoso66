@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.bg-for-desktop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(./background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.content .logo{
+    width: 400px;
+    height: 150px;
+    margin: 30px auto 0px;
+}
+.content .logo img{
+    width: 100%;
+    height: 100%;
+}
+.content .text{
+    width: 250px;
+    margin: 10px auto 0px;
+}
+.content .text img{
+    width: 100%;
+    height: 140px;
+}
+.content .detail{
+    width: 400px;
+}
+.content .detail img{
+    width: 100%;
+    height: 100%;
+}
+.content .poster{
+    width: 400px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none !important;
+}
+.content .poster img{
+    width: 100%;
+    height: 340px;
+}
+.content .link-contact{
+    width: 300px;
+    margin: 30px auto 0px;
+}
+.content .link-contact img{
+    width: 100%;
+    height: 100%;
+    background-color: #ff0000;
+}
+.content .link-download{
+    width: 700px;
+    margin: 50px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .link-download img{
+    width: 300px;
+    height: 100%;
+    background-color: #ff0000;
+}
+.tree{
+    display: none;
+}
+.cartoon{
+    display: none;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .bg-for-desktop{
+        display: none;
+    }
+    .cartoon{
+        width: 400px;
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+    .cartoon img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .tree{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    }
+    .tree .left,
+    .tree .right{
+        width: 30%;
+    }
+    .tree .left img,
+    .tree .right img{
+        width: 100%;
+        height: 100%;
+    }
+    .bg-for-mobile{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: url(./Background\ phone.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: block;
+    }
+    .content .logo{
+        width: 70%;
+        height: 100%;
+    }
+    .content .text{
+        width: 40%;
+        margin: 10px auto 0px;
+    }
+    .content .text img{
+        width: 100%;
+        height: 100%;
+    }
+    .content .detail{
+        width: 60%;
+    }
+    .content .poster{
+        width: 20%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: none;
+    }
+    .content .poster img{
+        width: 100%;
+        height: 100%;
+    }
+    .content .link-contact{
+        width: 60%;
+        margin: 10px auto 0px;
+        padding: 10px;
+    }
+    .content .link-contact img{
+        width: 100%;
+        height: 100%;
+    }
+    .content .link-download{
+        width: 100%;
+        margin: 10px auto 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .content .link-download img{
+        width: 95%;
+        height: 100%;
+        padding: 5px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    .bg-for-desktop{
+        display: none;
+    }
+    .cartoon{
+        width: 300px;
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+    .cartoon img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .tree{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+    }
+    .tree .left,
+    .tree .right{
+        width: 28%;
+    }
+    .tree .left img,
+    .tree .right img{
+        width: 100%;
+        height: 100%;
+    }
+    .bg-for-mobile{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: url(./Background\ phone.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: block;
+    }
+    .content .logo{
+        width: 50%;
+        height: 100%;
+        margin: 60px auto 0px;
+    }
+    .content .text{
+        width: 30%;
+        margin: 10px auto 0px;
+    }
+    .content .text img{
+        width: 100%;
+        height: 100%;
+    }
+    .content .detail{
+        width: 50%;
+    }
+    .content .poster{
+        width: 50%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: none;
+    }
+    .content .poster img{
+        width: 100%;
+        height: 50%;
+    }
+    .content .link-contact{
+        width: 50%;
+        margin: 10px auto 0px;
+        padding: 30px;
+    }
+    .content .link-contact img{
+        width: 100%;
+        height: 100%;
+    }
+    .content .link-download{
+        width: 80%;
+        margin: 20px auto 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .content .link-download img{
+        width: 95%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .content .logo{
+        width: 50%;
+        height: 100%;
+        margin: 0px auto 0px;
+    }
+    .content .poster{
+        width: 40%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: block !important;
+    }
+    .content .poster img{
+        width: 100%;
+        height: 40%;
+    }
+    .content .link-contact{
+        width: 34%;
+        margin: 10px auto 0px;
+        padding: 30px;
+    }
+    .content .link-contact img{
+        width: 100%;
+        height: 100%;
+    }
+    .content .link-download{
+        width: 50%;
+        margin: 20px auto 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .content .link-download img{
+        width: 95%;
+        height: 100%;
+    }
+}
